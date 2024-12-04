@@ -14,37 +14,46 @@ p {
     color: white;
     text-shadow: 0 0 5px rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 1.2em;
 }
+
+
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 7vh;
+    min-height: 55px;
 }
 
 .header-left {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    padding-inline-start: 2em;
+}
+
+.header-logo {
+    padding-left: 1em;
+}
+
+.header-left p {
+    font-size: 1.7em;
+    padding-left: 1em;
 }
 
 .header-right {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    padding-inline-end: 3em;
+    padding-right: 2em;
 }
 
 .header-right>a {
     margin-left: 2em;
-}
-
-.header-logo {
-    height: 4em;
 }
 
 main {
@@ -53,13 +62,19 @@ main {
     min-height: 100%;
 }
 
-.content {
+main .content {
     height: 100%;
     flex: 1 0 auto;
 }
 
 footer {
     flex: 0 0 auto;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials {
