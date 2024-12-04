@@ -12,20 +12,27 @@ body {
 a,
 p {
     color: white;
-    text-shadow: 0 0 5px rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
+.active {
+    text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+}
 
+header {
+    border-bottom: 1px white;
+}
 
-nav {
+.header-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 7vh;
     min-height: 55px;
+    padding: 5px;
 }
 
 .header-left {
@@ -33,10 +40,12 @@ nav {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    height: 100%;
 }
 
 .header-logo {
     padding-left: 1em;
+    height: 100%;
 }
 
 .header-left p {
@@ -54,6 +63,13 @@ nav {
 
 .header-right>a {
     margin-left: 2em;
+    transition: 0.5s;
+}
+
+.header-right a:hover {
+    margin-left: 2em;
+    transition: 0.5s;
+    transform: scale(0.9);
 }
 
 main {
@@ -69,17 +85,35 @@ main .content {
 
 footer {
     flex: 0 0 auto;
+    padding: auto;
 }
 
-footer .container{
+footer .socials-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.socials {
+.contact-info {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info p {
+    font-size: 1em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+}
+
+.social-links img {
+    height: 40px;
+    padding: 5px 15px;
 }
