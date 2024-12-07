@@ -22,7 +22,7 @@ p {
     transform: scale(0.9);
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -123,3 +123,5 @@ footer .socials-container {
     padding: 5px 15px;
 }
 
+
+/* Стили попапа авторизации */

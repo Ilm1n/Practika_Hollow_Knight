@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Ilya Minin">
+    <link rel="icon" href="source/images/icon.svg" type="svg">
     <link rel="stylesheet" href="source/css/style.css">
     <title>Hollow Knight</title>
 </head>
@@ -19,7 +20,7 @@
             </div>
             <div class="header-right">
                 <a href="index.html" class="active">Описание</a>
-                <a href="glossary.html">Словарь</a>
+                <a href="glossary.html">Глоссарий</a>
                 <a href="test.html">Галерея</a>
                 <a href="gallery.html">Тест</a>
                 <a href="profile.html" id="login-button">Войти</a>
@@ -30,7 +31,7 @@
 
     <main>
         <div class="content">
-
+            <h1 class="page-name">Описание</h1>
         </div>
     </main>
 
@@ -51,18 +52,23 @@
     <!-- Попап для регистрации -->
     <div id="popup" class="popup hidden">
         <div class="popup-content">
-            <h2>Регистрация</h2>
+            <!-- <h2>Регистрация</h2> -->
             <form id="registration-form">
-                <label for="username">Имя пользователя:</label>
-                <input type="text" id="username" name="username" required>
+                <fieldset>
+                    <legend>Авторизация</legend>
 
-                <label for="email">Электронная почта:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="login">Логин:</label>
+                    <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$" required>
 
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required>
+                    <label for="date">Дата рождения:</label>
+                    <input type="date" id="date" name="date" min="1950-01-01" max="2024-12-07" required>
 
-                <button type="submit">Зарегистрироваться</button>
+                    <label for="gender">Пол:</label>
+                    <span>Мужской<input type="radio" id="gender" name="gender" value="m" required></span>
+                    <span>Женский<input type="radio" id="gender" name="gender" value="w" required></span>
+
+                    <button type="submit" id="login-button">Зарегистрироваться</button>
+                </fieldset>
             </form>
         </div>
     </div>
