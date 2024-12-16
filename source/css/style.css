@@ -54,6 +54,10 @@ body {
 header {
     border-bottom: 1px white;
     position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000000;
 }
 
 .header-nav {
@@ -61,7 +65,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 7vh;
     min-height: 55px;
     padding: 5px;
 }

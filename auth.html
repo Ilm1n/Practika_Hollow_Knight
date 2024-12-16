@@ -4,37 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Ilya Minin">
     <link rel="stylesheet" href="source/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="source/css/auth.css">
+    <title>Авторизация</title>
 </head>
 
 <body>
 
-    <main>
-        <section class="central-content">
-            <div class="content">
-                <form id="registration-form">
-                    <fieldset>
-                        <legend>Авторизация</legend>
-
-                        <label for="login">Логин:(Русские буквы, цифры, 4-10 символов)</label>
-                        <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$"
-                            placeholder="Введите логин" required>
-
-                        <label for="date">Дата рождения:</label>
-                        <input type="date" id="date" name="date" min="1950-01-01" max="2024-12-07" required>
-
-                        <label for="gender">Пол:</label>
-                        <span>Мужской<input type="radio" id="gender" name="gender" value="m" required></span>
-                        <span>Женский<input type="radio" id="gender" name="gender" value="w" required></span>
-
-                        <button type="submit" id="login-button">Зарегистрироваться</button>
-                    </fieldset>
-                </form>
+    <header>
+        <nav class="header-nav">
+            <div class="header-left">
+                <img src="source/images/icons8-hollow-knight-64.svg" alt="king-rune.jpg" class="header-logo">
+                <p>Hollow Knight</p>
             </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form id="auth-form" name="auth-form">
+                <label for="login">Логин: (Русские буквы, цифры. 4-10 символов)</label>
+                <span id="login-error" class="error-message"></span>
+                <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$" placeholder="Введите логин"
+                    required>
+
+                <label for="date">Дата рождения: (01.01.1950 - 07.12.2024)</label>
+                <span id="date-error" class="error-message"></span>
+                <input type="date" id="date" name="date" min="1950-01-01" max="2024-12-07" required>
+
+                <label for="gender">Пол:</label>
+                <span>Мужской<input type="radio" id="male" name="gender" value="Мужской" required checked></span>
+                <span>Женский<input type="radio" id="female" name="gender" value="Женский" required></span>
+                <span id="gender-error" class="error-message"></span>
+
+                <button type="submit" id="login-button">Войти</button>
+            </form>
         </section>
     </main>
 
+    <footer>
+        <div class="socials-container">
+            <div class="contact-info">
+                <div class="social-links">
+                    <a href="tel:">+7 (921) 982-62-83</a>
+                    <a href="#"><img src="source/images/icons8-vk.svg" alt="VK"></a>
+                    <a href="#"><img src="source/images/icons8-telegram.svg" alt="Telegram"></a>
+                    <a href="#"><img src="source/images/icons8-github.svg" alt="Github"></a>
+                </div>
+                <p>&copy; 2024 Ilm1n. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="source/js/auth.js"></script>
 </body>
 
 </html>
