@@ -1,3 +1,11 @@
+.central-content {
+    background-color:none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+
+
 .slider-container {
     display: flex;
     flex-direction: column;
@@ -34,13 +42,13 @@
     object-fit: contain; 
     max-height: 700px;
     border-radius: 15px;
-    border: solid rgba(255, 255, 255, 0.205) 0.1px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
 
 }
 
 .slide p {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-shadow: 0 0 3px rgb(255, 255, 255);
     text-align: center;
 }
@@ -74,7 +82,7 @@
 
 .slider-info {
     color: white;
-    font-size: 1.2em;
+    font-size: 1.5em;
     text-align: center;
     text-shadow: 0 0 3px rgb(255, 255, 255);
 }
