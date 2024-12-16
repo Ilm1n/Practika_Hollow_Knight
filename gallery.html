@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Ilya Minin">
     <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="source/css/gallery.css">
     <title>Gallery</title>
 </head>
 
@@ -29,9 +30,88 @@
 
 
     <main>
-        <div class="content">
-            <h1 class="page-name">Галлерея</h1>
-        </div>
+        <h1 class="top-pagename">Галерея</h1>
+        <section class="central-content">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="source/images/gallery/Blue_Cave.jpg" alt="Blue_Cave">
+                    <p>Голубая пещера</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/City_of_Tears.jpg" alt="City_of_Tears">
+                    <p>Город слез</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/colosseum.jpg" alt="colosseum.jpg">
+                    <p>Колизей</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/Crossroads_Entrance.jpg" alt="Crossroads_Entrance">
+                    <p>Перепутье</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/dirtmouth.jpg" alt="dirtmouth.jpg">
+                    <p>Грязьмут</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery//False_Knight.jpg" alt="False_Knight">
+                    <p>Ложный рацарь</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/Grimm.jpg" alt="Grimm">
+                    <p>Гримм</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/Lake_of_Unn.jpg" alt="Lake_of_Unn">
+                    <p>Озеро Унн</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/mines.jpg" alt="mines">
+                    <p>Кристальный Пик</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/Moss_charger.jpg" alt="Moss_charger">
+                    <p>Моховой Таран</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/Paintmaster.jpg" alt="Paintmaster">
+                    <p>Мастер Кисти</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/relic_dealer.jpg" alt="relic_dealer">
+                    <p>Старьёвщик Лемм</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/Shade_Beast.jpg" alt="Shade_Beast">
+                    <p>Тень Зверя</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/Teacher.jpg" alt="Teacher">
+                    <p>Мономона Наставница</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/The Hive.jpg" alt="The Hive">
+                    <p> Улей</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/The_Abyss.jpg" alt="The_Abyss">
+                    <p>Бездна</p>
+                </div>
+                <div class="slide">
+                    <img src="source/images/gallery/white palace.jpg" alt="white palace">
+                    <p>Белый дворец</p>
+                </div>
+
+                <div class="slider-controls">
+                    <button id="prevSlide">❮</button>
+                    <button id="nextSlide">❯</button>
+                </div>
+                <div class="slider-info" id="infoText">
+                    1 из 3
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -48,7 +128,9 @@
         </div>
     </footer>
 
+
     <script src="source/js/script.js"></script>
+    <script src="source/js/gallery.js"></script>
 </body>
 
 </html>
