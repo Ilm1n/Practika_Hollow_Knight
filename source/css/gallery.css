@@ -1,5 +1,5 @@
 .central-content {
-    background-color:none;
+    background-color: none;
     box-shadow: none;
     border-radius: none;
 }
@@ -39,7 +39,7 @@
 .slide img {
     width: 99%;
     height: auto;
-    object-fit: contain; 
+    object-fit: contain;
     max-height: 700px;
     border-radius: 15px;
     box-shadow: 0 0 5px rgb(255, 255, 255);
