@@ -22,7 +22,6 @@ p {
     font-size: 1.4em;
 }
 
-
 h2 {
     font-size: 2em;
 }
@@ -32,14 +31,7 @@ h1 {
     text-shadow: 0 0 3px rgb(255, 255, 255);
 }
 
-.active {
-    text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-    transform: scale(0.9);
-}
 
-.hidden {
-    display: none;
-}
 
 html,
 body {
@@ -52,7 +44,6 @@ body {
 
 /* header */
 header {
-    border-bottom: 1px white;
     position: sticky;
     top: 0;
     width: 100%;
@@ -104,6 +95,23 @@ header {
     margin-left: 2em;
     transition: 0.5s;
     transform: scale(0.9);
+    text-decoration: underline;
+}
+
+.header-right button {
+    background: none;
+    border: none;
+    color: white;
+    text-shadow: 0 0 3px rgb(255, 255, 255);
+    font-size: 1.4em;
+    margin-left: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header-right button:hover {
+    transform: scale(0.9);
+    text-decoration: underline;
 }
 
 
@@ -190,6 +198,16 @@ footer .socials-container {
 }
 
 /* other */
+.active {
+    text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255);
+    transform: scale(0.9);
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
 .centered {
     display: flex;
     justify-content: center;
@@ -219,6 +237,5 @@ iframe {
         box-shadow: none;
         border-radius: none;
     }
-
 
 }

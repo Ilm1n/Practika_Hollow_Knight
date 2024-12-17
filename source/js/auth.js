@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const isAuthenticate = "true";
 
             sessionStorage.setItem('login', login);
-            sessionStorage.setItem('dateOfBirth', date);
+            sessionStorage.setItem('date', date);
             sessionStorage.setItem('gender', gender);
             sessionStorage.setItem("isAuthenticate", isAuthenticate)
             window.location.href = "index.html";

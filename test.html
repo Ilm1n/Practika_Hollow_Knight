@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Ilya Minin">
+    <link rel="icon" href="source/images/icon.svg" type="svg">
     <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="source/css/test.css">
     <title>Test</title>
 </head>
 
@@ -18,12 +20,14 @@
                 <p>Hollow Knight</p>
             </div>
             <div class="header-right">
-                <a href="auth.html">авторизация</a>
                 <a href="index.html">Описание</a>
                 <a href="glossary.html">Глоссарий</a>
                 <a href="test.html" class="active">Тест</a>
                 <a href="gallery.html">Галерея</a>
-                <a href="profile.html" id="login-button">Войти</a>
+                <a href="profile.html" id="username">Личный кабинет</a>
+                <div class="logout-section" id="logout-section">
+
+                </div>
             </div>
         </nav>
     </header>
@@ -32,11 +36,68 @@
     <main>
         <h1 class="top-pagename">Тест</h1>
         <section class="central-content">
-            <div class="content">
+            <h2>Тест по Hollow Knight</h2>
 
-            </div>
+            <form id="quizForm">
+                <fieldset>
+                    <label for="q1">1. Как зовут главного персонажа, которым управляет игрок?</label>
+                    <input type="text" id="q1" name="q1">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <label for="q2">2. Как называется королевство, где происходят события игры?</label>
+                    <input type="text" id="q2" name="q2">
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Какой персонаж носит маску и помогает в игре?</legend>
+                    <label><input type="radio" name="q3" value="Зот"> Зот</label>
+                    <label><input type="radio" name="q3" value="Шаман Ул"> Шаман Ул</label>
+                    <label><input type="radio" name="q3" value="Хорнет"> Хорнет</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Как называется основное оружие главного героя?</legend>
+                    <label><input type="radio" name="q4" value="Гвоздь"> Гвоздь</label>
+                    <label><input type="radio" name="q4" value="Кинжал"> Кинжал</label>
+                    <label><input type="radio" name="q4" value="Меч"> Меч</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Сколько заповедей у Зота Могучего?</legend>
+                    <label><input type="radio" name="q5" value="3"> 3</label>
+                    <label><input type="radio" name="q5" value="57"> 57</label>
+                    <label><input type="radio" name="q5" value="41"> 41</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. Кто из персонажей известен как Мудрец Снов?</legend>
+                    <label><input type="radio" name="q6" value="Мономон"> Мономон</label>
+                    <label><input type="radio" name="q6" value="Харума"> Харума</label>
+                    <label><input type="radio" name="q6" value="Лурьен"> Лурьен</label>
+                    <span class="error-message"></span>
+                    <span class="success-message"></span>
+                </fieldset>
+
+                <div class="result-section">
+                    <span id="test-result"></span>
+                </div>
+
+                <button type="submit" id="submit-button">Ответить</button>
+            </form>
         </section>
     </main>
+
 
     <footer>
         <div class="socials-container">
@@ -53,6 +114,7 @@
     </footer>
 
     <script src="source/js/script.js"></script>
+    <script src="source/js/test.js"></script>
 </body>
 
 </html>
