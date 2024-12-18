@@ -8,7 +8,7 @@
     <link rel="icon" href="source/images/icon.svg" type="svg">
     <link rel="stylesheet" href="source/css/style.css">
     <link rel="stylesheet" href="source/css/auth.css">
-    <title>Авторизация</title>
+    <title>Authentication</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
     <main>
         <section>
-            <form id="auth-form" name="auth-form" novalidate>
+            <form id="auth-form" name="authForm" novalidate>
                 <label for="login">Логин: (Русские буквы, цифры. 4-10 символов)</label>
                 <span id="login-error" class="error-message"></span>
                 <input type="text" id="login" name="login" pattern="^[А-Яа-я0-9]{4,10}$" placeholder="Введите логин"

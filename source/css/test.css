@@ -1,6 +1,5 @@
 form fieldset {
     border: none;
-    margin-bottom: 20px;
 }
 
 form legend,
@@ -52,14 +51,29 @@ form button[type="submit"]:hover,
 }
 
 .success-message {
+    color: green;
     font-weight: bold;
     font-size: 1rem;
     margin: 5px;
 }
 
+.button-result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.result-section {
+    margin-left: 20px;
+    text-align: center;
+}
+
 #test-result {
+    color: white;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
     margin-top: 20px;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.6em;
     text-align: center;
 }
