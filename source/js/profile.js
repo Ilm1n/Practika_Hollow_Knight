@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
     userLoginElement.textContent = login;
     userDate.textContent = formattedDate;
     userGender.textContent = gender;
-    userLastTestResult.textContent = `Вы набрали ${lastTestResult} из 6 возможных баллов`;
+
+    if (lastTestResult) {
+        userLastTestResult.textContent = `Вы набрали ${lastTestResult} из 6 возможных баллов`;
+    } else {
+        userLastTestResult.textContent = "Вы еще не проходили тест";
+    }
 
 
     logoutButton.addEventListener("click", () => {
